@@ -10,6 +10,8 @@
   
    tasks:
     - name: Run terraform scripts
+      args:
+         executable: /usr/sbin
       terraform:
         project_path: "./"
         state: "{{ state }}"
