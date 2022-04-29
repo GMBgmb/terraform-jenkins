@@ -13,7 +13,7 @@
       args:
          executable: /usr/sbin
       terraform:
-        project_path: "."
+        project_path: "./"
         state: "{{ state }}"
         backend_config:
          bucket: "{{s3_bucket}}"
