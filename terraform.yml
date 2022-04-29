@@ -14,7 +14,7 @@
         project_path: "./"
         state: "{{ state }}"
         backend_config:
-         bucket: {{s3_bucket:}}
+         bucket: {{s3_bucket}}
          key : {{key}}
          region: {{region}}
         variables_file: "{{app_env}}.tfvars"
