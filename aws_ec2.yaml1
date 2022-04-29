@@ -1,0 +1,11 @@
+plugin: aws_ec2
+regions:
+    - us-west-2
+filters:
+    # All instances with their `Environment` tag set to `dev`
+    
+    #     # All dev and QA hosts
+tag:Name:
+     - test
+    #  - jenkins
+    
