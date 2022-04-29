@@ -1,0 +1,9 @@
+# Create a simple s3 bucket
+---
+ - hosts: localhost
+   tasks:
+    - name: Create S3 bucket
+      # Create a simple s3 bucket
+      s3_bucket:
+       name: javahomegandeu-tf-1212
+       state: present
