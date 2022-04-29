@@ -1,0 +1,13 @@
+# Example using include_filters and exclude_filters to compose the inventory.
+plugin: aws_ec2
+regions:
+#   - us-east-1
+     - us-west-2
+include_filters:
+     - tag:Name:
+        - 'test'
+#       - tag:Name:
+#         - 'my_third_tag'
+exclude_filters:
+         - tag:Name:
+           - jenkins
