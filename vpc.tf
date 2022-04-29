@@ -6,7 +6,7 @@ resource "aws_vpc" "java_vpc" {
   cidr_block = "${var.vpc_cidr}"
 
   # Makes your instances shared on the host.
-  instance_tenancy = "{var.tenancy}"
+  instance_tenancy = "${var.tenancy}"
 
   # Required for EKS. Enable/disable DNS support in the VPC.
   enable_dns_support = true
